@@ -1,0 +1,22 @@
+name: GPR_env
+channels:
+  - conda-forge
+dependencies:
+  - contourpy=1.3.3
+  - gpflow=2.9.2
+  - keras=3.11.2
+  - libtensorflow_framework=2.18.0
+  - matplotlib=3.10.6
+  - matplotlib-base=3.10.6
+  - matplotlib-inline=0.1.7
+  - numpy=2.3.3
+  - pandas=2.3.2
+  - python=3.12.11
+  - scikit-learn=1.7.2
+  - scipy=1.16.3
+  - tensorflow=2.18.0
+  - tensorflow-probability=0.25.0
+  - pip:
+      - dtaidistance==2.4.0
+      - pip==26.1
+      - pyiast==1.4.3

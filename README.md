@@ -10,15 +10,15 @@ The code, adsorption datasets, and dependency specifications needed to reproduce
 
 ### Repository Structure
 
-AF_Test
-CO2_CH4
-CO2_H2S
-Xe_Kr
-Data_Distribution
-Data_Size_Test
-Datasets
-Plot
-job_script
+├── AF_Test                   # GP RE stopping criteria implementation for CO2/CH4 mixture across the MOFs
+├── CO2_CH4                   # Contains AL and TAL implementation with LHS selection scheme and PAC stopping criteria for CO2/CH4 mixture across the MOFs
+├── CO2_H2S                   # Contains AL and TAL implementation with LHS selection scheme and PAC stopping criteria for CO2/H2S mixture in Cu-BTC
+├── Xe_Kr                     # Contains AL and TAL implementation with LHS selection scheme and PAC stopping criteria for Xe/Kr mixture in Cu-BTC        
+├── Data_Distribution         # BI_Approach data selection scheme implementation across the MOFs and mixtures
+├── Data_Size_Test            # Initial training data size test in Cu-BTC and IRMOF-1
+├── Datasets                  # Adsorption data for P-X and/or P-X-T space across the MOFs and mixtures
+├── Plot                      # Figure generation
+├── job_script                # Main code block for TAL implementation needed across all implementation files
 
 ### TAL Framework
 

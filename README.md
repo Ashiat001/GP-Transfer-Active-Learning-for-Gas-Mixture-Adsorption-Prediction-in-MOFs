@@ -10,7 +10,7 @@ The code, adsorption datasets, and dependency specifications needed to reproduce
 
 ### Repository Structure
 
-[`AF_Test`](AF_Test): GP RE stopping criteria implementation for CO2/CH4 mixture across the MOFs.
+[`AF_Test`](AF_Test): GP RE stopping criteria implementation for CO<sub>2</sub>/CH<sub>4</sub> mixture across the MOFs.
 
 [`CO2_CH4`](CO2-CH4): Contains AL and TAL implementation with LHS selection scheme and PAC stopping criteria for CO<sub>2</sub>/CH<sub>4</sub> mixture across the MOFs.
 

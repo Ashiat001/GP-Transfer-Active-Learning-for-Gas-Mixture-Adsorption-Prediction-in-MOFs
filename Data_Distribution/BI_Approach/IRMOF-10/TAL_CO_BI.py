@@ -10,14 +10,14 @@ import tensorflow as tf
 
 #========= Training Data Generation ==========
 # read in the complete GCMC ground truth data
-df = pd.read_csv('Loadings_CO2_IRMOF-10-2.csv')
-df2 = pd.read_csv('Loadings_CC1.csv')
+df = pd.read_csv('Pure_CO2_data.csv')
+df2 = pd.read_csv('Mixture_px.csv')
 # print(df.head())
 # print(df2.head())
 
 #======= Commence Pure Data Model development =======
 # Read in the pure CO2 training data
-gf = pd.read_csv('training_pure_co_m1.csv')
+gf = pd.read_csv('Training_co_BI.csv')
 
 # define training data and label
 x = gf.iloc[:, 0]
@@ -110,7 +110,7 @@ for i in range(max_iter):
 
 #======= Commence training for CO2 in P-X space =======
 # Read in the mixture training data
-hf = pd.read_csv('training_px_m1.csv')
+hf = pd.read_csv('training_px_BI.csv')
 print(hf.head())
 
 # Define training and test data and standardize

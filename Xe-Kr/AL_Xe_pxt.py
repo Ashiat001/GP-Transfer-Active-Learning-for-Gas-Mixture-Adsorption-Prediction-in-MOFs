@@ -9,7 +9,7 @@ import gpflow
 import tensorflow as tf
 
 # Read in the mixture training and complete data
-df2 = pd.read_csv('complete_Krish_pxt.csv')
+df2 = pd.read_csv('Mixture_pxt.csv')
 print(df2.head())
 
 hf = pd.read_csv('training_mix_pxt_xe.csv')

@@ -10,9 +10,9 @@ import tensorflow as tf
 
 #========= Training Data Generation ==========
 # read in the complete GCMC ground truth data
-df = pd.read_csv('Loadings_CH4_Cu-BTC-2.csv')
-df2 = pd.read_excel('complete_Krish_1.xlsx')
-df3 = pd.read_csv('complete_Krish.csv')
+df = pd.read_csv('Pure_CH4_data.csv')
+df2 = pd.read_excel('Mixture_px.xlsx')
+df3 = pd.read_csv('Mixture_pxt.csv')
 # print(df.head())
 # print(df2.head())
 # print(df3.head())

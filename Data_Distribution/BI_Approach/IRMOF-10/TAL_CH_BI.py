@@ -9,15 +9,15 @@ import gpflow
 import tensorflow as tf
 
 #======= Read in the Complete GCMC Ground truth ========
-df = pd.read_csv('Loadings_methane_IRMOF-10-2.csv')
-df2 = pd.read_csv('Loadings_CC1.csv')
+df = pd.read_csv('Pure_CH4_data.csv')
+df2 = pd.read_csv('Mixture_px.csv')
 # print(df.head())
 # print(df2.head())
 
 #======= Commence Pure Data Model development =======
 
 # Read in the pure CH4 training data
-gf = pd.read_csv('training_pure_ch_m1.csv')
+gf = pd.read_csv('Training_ch_BI.csv')
 
 # define training data and label
 x = gf.iloc[:, 0]
@@ -108,7 +108,7 @@ for i in range(max_iter):
 
 #======= Commence training for CH4 in P-X space =======
 # Read in the mixture training data
-hf = pd.read_csv('training_px_m1.csv')
+hf = pd.read_csv('training_px_BI.csv')
 print(hf.head())
 
 # Define training and test data and standardize

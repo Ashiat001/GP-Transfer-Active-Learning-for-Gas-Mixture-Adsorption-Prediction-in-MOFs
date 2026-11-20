@@ -10,8 +10,8 @@ import tensorflow as tf
 
 #========= Training Data Generation ==========
 # read in the complete GCMC ground truth data
-df = pd.read_csv('Loadings_methane_IRMOF-10-2.csv')
-df2 = pd.read_csv('Loadings_CC1.csv')
+df = pd.read_csv('Pure_CH4_data.csv')
+df2 = pd.read_csv('Mixture_px.csv')
 # print(df.head())
 # print(df2.head())
 

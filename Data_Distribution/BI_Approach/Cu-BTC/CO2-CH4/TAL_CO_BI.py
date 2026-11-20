@@ -10,16 +10,16 @@ import tensorflow as tf
 
 #========= Training Data Generation ==========
 # read in the complete GCMC ground truth data
-df = pd.read_csv('Loadings_CO2_Cu-BTC-2.csv')
-df2 = pd.read_excel('complete_Krish_1.xlsx')
-df3 = pd.read_csv('complete_Krish.csv')
+df = pd.read_csv('Pure_CO2_data.csv')
+df2 = pd.read_excel('Mixture_px.xlsx')
+df3 = pd.read_csv('Mixture_pxt.csv')
 # print(df.head())
 # print(df2.head())
 # print(df3.head())
 
 #======= Commence Pure Data Model development =======
 # Read in the pure CO2 training data
-gf = pd.read_csv('training_pure_co_m1.csv')
+gf = pd.read_csv('training_pure_co_BI.csv')
 
 # define training data and label
 x = gf.iloc[:, 0]
@@ -112,7 +112,7 @@ for i in range(max_iter):
 
 #======= Commence training for CO2 in P-X space =======
 # Read in the mixture training data
-hf = pd.read_csv('training_px_Krish.csv')
+hf = pd.read_csv('training_px_BI.csv')
 print(hf.head())
 
 # Define training and test data and standardize
@@ -339,7 +339,7 @@ os.system("echo "+str(r_squared)+", "+str(MAE)+", "+str(MRE)+", "+str(no_iters)+
 
 #======= Commence Training for CO2 in P-X-T Space ========
 # Read in the mixture training and complete data
-kf = pd.read_csv('training_pxt_Krish.csv')
+kf = pd.read_csv('training_pxt_BI.csv')
 print(kf.head())
 
 # Define training and test data and standardize

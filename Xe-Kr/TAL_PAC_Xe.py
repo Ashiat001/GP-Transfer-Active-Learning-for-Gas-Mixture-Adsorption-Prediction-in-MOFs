@@ -9,9 +9,9 @@ import gpflow
 import tensorflow as tf
 
 #======= Read in the Complete GCMC Ground truth ========
-df = pd.read_csv('Loadings_Xe_Cu-BTC-2.csv')
-df2 = pd.read_csv('complete_Krish_px.csv')
-df3 = pd.read_csv('complete_Krish_pxt.csv')
+df = pd.read_csv('Pure_Xe_data.csv')
+df2 = pd.read_csv('Mixture_px.csv')
+df3 = pd.read_csv('Mixture_pxt.csv')
 # print(df.head())
 # print(df2.head())
 # print(df3.head())

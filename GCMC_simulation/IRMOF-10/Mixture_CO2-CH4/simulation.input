@@ -1,0 +1,44 @@
+SimulationType                MonteCarlo
+NumberOfCycles                100000
+NumberOfEquilibrationCycles   50000
+NumberOfInitializationCycles  200000
+
+PrintEvery                    5000
+ContinueAfterCrash            no
+WriteBinaryRestartFileEvery   2000
+UseChargesFromCIFFile         yes
+
+Forcefield                    UFF
+RemoveAtomNumberCodeFromLabel yes
+
+Framework 0
+FrameworkName IRMOF-10-2
+UnitCells 1 1 1
+ExternalTemperature 300.0
+ExternalPressure MMM
+
+Component 0 MoleculeName               methane
+            MoleculeDefinition         TraPPE
+            MolFraction                EEE
+            TranslationProbability     0.5
+            RotationProbability        0.5
+            ReinsertionProbability     0.5
+            RegrowProbability          0.5
+            IdentityChangeProbability  1.0
+            NumberOfIdentityChanges    2
+            IdentityChangesList        0 1
+            SwapProbability            1.0
+            CreateNumberOfMolecules    0
+
+Component 1 MoleculeName               CO2
+            MoleculeDefinition         TraPPE
+            MolFraction                FFF
+            TranslationProbability     0.5
+            ReinsertionProbability     0.5
+            RegrowProbability          0.5
+            RotationProbability        0.5
+            IdentityChangeProbability  1.0
+            NumberOfIdentityChanges    2
+            IdentityChangesList        0 1
+	    SwapProbability            1.0
+            CreateNumberOfMolecules    0

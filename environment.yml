@@ -4,6 +4,7 @@ channels:
 dependencies:
   - contourpy=1.3.3
   - gpflow=2.9.2
+  - jupyter
   - keras=3.11.2
   - libtensorflow_framework=2.18.0
   - matplotlib=3.10.6

@@ -1,5 +1,7 @@
 # GP-Transfer-Active-Learning-for-Gas-Mixture-Adsorption-Prediction-in-MOFs 
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24408670.svg)](https://doi.org/10.5281/zenodo.24408670)
+
 ### Description ###
 
 This repository contains the full implementation, datasets, and environment requirements for the transfer active learning (TAL) framework for data-efficient gas mixture adsorption prediction in metal-organic frameworks (MOFs). TAL combines active learning (AL) and transfer learning (TL) to leverage pure component adsorption data for multi-component gas adsorption prediction across a range of thermodynamic conditions, reducing the data required for mixture adsorption prediction in MOFs. 
@@ -97,7 +99,7 @@ The Cu-BTC mixture data come from Mukherjee et al. (see Datasets), so they have 
 ### Versions
 
 - `v1.0`: code and data of the original submission.
-- `v2.0`: revised version: held-out evaluation, corrected transfer prior, re-simulated pure H<sub>2</sub>S, Kr and Xe isotherms in Cu-BTC, ablation study, IAST calculations and GCMC simulation files.
+- `v2.0`: revised version: held-out evaluation, corrected transfer prior, re-simulated pure H<sub>2</sub>S, Kr and Xe isotherms in Cu-BTC, ablation study, IAST calculations and GCMC simulation files. Archived on Zenodo: [https://doi.org/10.5281/zenodo.24408670](https://doi.org/10.5281/zenodo.24408670).
 
 ### TAL Framework
 
